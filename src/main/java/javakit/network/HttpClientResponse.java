@@ -23,6 +23,7 @@ public class HttpClientResponse{
             @Override
             public ResponseBody call()  {
                 // TODO Auto-generated method stub
+                ResponseBody responseBody = null;
                 Response response = null;
                     OkHttpClient client = new OkHttpClient();
                     Request request = new Request.Builder()
@@ -36,11 +37,12 @@ public class HttpClientResponse{
                 }
 
                 if (response.isSuccessful()) {
-                        return response.body();
+                    responseBody = response.body();
                     }else {
                     resultCallback.failure(new Exception("network request error : " + response.code()));
                         return null;
                     }
+                return responseBody;
             }});
         new Thread(task).start();
 
