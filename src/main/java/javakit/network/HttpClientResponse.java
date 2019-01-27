@@ -15,13 +15,13 @@ import java.util.concurrent.FutureTask;
 public class HttpClientResponse{
 
 
-    public static void Request(String url,ResultCallback<ResponseBody> callback) {
+    public static void Request(String url,ResultCallback<ResponseBody> resultCallback) {
 
 
         FutureTask<ResponseBody> task = new FutureTask<ResponseBody>(new Callable<ResponseBody>() {
 
             @Override
-            public ResponseBody call() throws Exception,IOException {
+            public ResponseBody call()  {
                 // TODO Auto-generated method stub
                 Response response = null;
                     OkHttpClient client = new OkHttpClient();
@@ -29,34 +29,37 @@ public class HttpClientResponse{
                             .url(url)
                             .build();
 
+                try {
                     response = client.newCall(request).execute();
+                } catch (IOException e) {
+                    resultCallback.failure(e);
+                }
 
-                    if (response.isSuccessful()) {
+                if (response.isSuccessful()) {
                         return response.body();
                     }else {
-                        callback.failure(new RuntimeException(response.message()));
+                    resultCallback.failure(new RuntimeException(response.message()));
                         return null;
                     }
             }});
         new Thread(task).start();
 
         try {
-            callback.success(task.get());
+            resultCallback.success(task.get());
         } catch (InterruptedException e) {
-            callback.failure(new RuntimeException(e));
+            resultCallback.failure(e);
             return;
         } catch (ExecutionException e) {
-            callback.failure(new RuntimeException(e));
+            resultCallback.failure(e);
             return;
         } catch (IOException e) {
-            callback.failure(new RuntimeException(e));
-            return;
+            resultCallback.failure(e);
         }
     }
 
     public interface ResultCallback<T>{
-        public void success(T res)throws IOException;
-        public void failure(RuntimeException e);
+        void success(T res) throws IOException;
+        default void failure(Exception e){};
     }
 
 }
