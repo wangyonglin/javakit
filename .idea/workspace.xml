@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5d3eb09-2e67-44a6-b0c2-35d9403de6c2" name="Default Changelist" comment="" />
+    <list default="true" id="e5d3eb09-2e67-44a6-b0c2-35d9403de6c2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/javakit/network/HttpClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javakit/network/HttpClientResponse.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -43,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/javakit/network/HttpClientResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-279">
-              <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="369">
+              <caret line="40" column="101" lean-forward="true" selection-start-line="40" selection-start-column="101" selection-end-line="40" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,13 +92,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/javakit/network/HttpClientResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/application.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/result/ResultCallback.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/network/HttpClientResponse.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="y" value="128" />
     <option name="width" value="1346" />
@@ -152,7 +154,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548572759064" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548574259588" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -202,12 +204,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547646195470</updated>
       <workItem from="1547646197250" duration="1307000" />
-      <workItem from="1548571296366" duration="1430000" />
+      <workItem from="1548571296366" duration="2316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2737000" />
+    <option name="totallyTimeSpent" value="3623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -312,8 +314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javakit/network/HttpClientResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="369">
+          <caret line="40" column="101" lean-forward="true" selection-start-line="40" selection-start-column="101" selection-end-line="40" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

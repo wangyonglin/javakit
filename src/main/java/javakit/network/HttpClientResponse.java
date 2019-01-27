@@ -38,7 +38,7 @@ public class HttpClientResponse{
                 if (response.isSuccessful()) {
                         return response.body();
                     }else {
-                    resultCallback.failure(new RuntimeException(response.message()));
+                    resultCallback.failure(new Exception("network request error : " + response.code()));
                         return null;
                     }
             }});
