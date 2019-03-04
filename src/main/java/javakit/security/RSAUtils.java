@@ -16,6 +16,7 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 
 /** */
@@ -375,4 +376,19 @@ public class RSAUtils {
         return temp;
     }
 
+    /**
+     * java端公钥加密
+     */
+    public static String encryptedData(String data, String PUBLICKEY)throws BadPaddingException,Exception {
+            return Base64Utils.encode(encryptByPublicKey(data.getBytes(), PUBLICKEY));
+    }
+
+    /**
+     * java端私钥解密
+     */
+    public static String decryptData(String data, String PRIVATEKEY) throws BadPaddingException,Exception  {
+        byte[] rs = Base64Utils.decode(data);
+        return new String(RSAUtils.decryptByPrivateKey(rs, PRIVATEKEY),"UTF-8"); //以utf-8的方式生成字符串
+
+    }
 }
