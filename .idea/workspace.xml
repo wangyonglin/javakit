@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d3eb09-2e67-44a6-b0c2-35d9403de6c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/javakit/result/JavaKitClientResponseCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/javakit/application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/security/RSAUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/javakit/security/RSAUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javakit/application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javakit/application.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -70,37 +74,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="381" column="107" selection-start-line="381" selection-start-column="107" selection-end-line="381" selection-end-column="107" />
+            <state relative-caret-position="189">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#RSAUtils#0" />
-                <element signature="docComment;field#KEY_ALGORITHM#0;class#RSAUtils#0" />
-                <element signature="docComment;field#SIGNATURE_ALGORITHM#0;class#RSAUtils#0" />
-                <element signature="docComment;method#genKeyPair#0;class#RSAUtils#0" />
-                <element signature="docComment;method#decryptByPrivateKey#0;class#RSAUtils#0" />
-                <element signature="docComment;method#decryptByPublicKey#0;class#RSAUtils#0" />
-                <element signature="method#decryptByPublicKey#0;class#RSAUtils#0" />
-                <element signature="docComment;method#encryptByPublicKey#0;class#RSAUtils#0" />
-                <element signature="docComment;method#encryptByPrivateKey#0;class#RSAUtils#0" />
-                <element signature="method#encryptByPrivateKey#0;class#RSAUtils#0" />
-                <element signature="docComment;method#getPrivateKey#0;class#RSAUtils#0" />
-                <element signature="method#getPrivateKey#0;class#RSAUtils#0" />
-                <element signature="docComment;method#getPublicKey#0;class#RSAUtils#0" />
-                <element signature="method#getPublicKey#0;class#RSAUtils#0" />
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#2172#2173#0" expanded="true" />
+                <element signature="e#2207#2208#0" expanded="true" />
+                <element signature="e#2251#2252#0" expanded="true" />
+                <element signature="e#2291#2292#0" expanded="true" />
+                <element signature="e#2326#2327#0" expanded="true" />
+                <element signature="e#2361#2362#0" expanded="true" />
+                <element signature="e#2405#2406#0" expanded="true" />
+                <element signature="e#2445#2446#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/Base64Utils.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="58" column="63" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="63" />
+            <state relative-caret-position="199">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,10 +139,12 @@
         <option value="$PROJECT_DIR$/src/main/java/javakit/security/Key.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/security/Base64Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/date/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/javakit/application.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/security/RSAKeys.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/result/JavaKitClientResponseCallback.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java" />
       </list>
     </option>
   </component>
@@ -160,7 +162,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -175,6 +177,102 @@
               <item name="javakit" type="58d84e3e:PackageViewProjectNode" />
               <item name="javakit.javakit" type="eaaa3913:PackageViewModuleGroupNode" />
               <item name="javakit.javakit.main" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
+          <expand>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="date" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="jackson" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="network" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="result" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="util" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
           </expand>
           <select />
@@ -206,58 +304,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="security" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551686854928" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551706524891" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -343,18 +395,19 @@
       <workItem from="1551618766793" duration="1717000" />
       <workItem from="1551623223839" duration="1686000" />
       <workItem from="1551675721310" duration="1868000" />
-      <workItem from="1551692904502" duration="270000" />
+      <workItem from="1551692904502" duration="600000" />
+      <workItem from="1551698443616" duration="7296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33007000" />
+    <option name="totallyTimeSpent" value="40633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" weight="0.30711043" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" weight="0.31164902" />
       <window_info id="Structure" order="1" sideWeight="0.503268" side_tool="true" weight="0.30711043" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -363,7 +416,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33060557" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33060557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,7 +429,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Palette" order="4" />
@@ -389,6 +442,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/InterruptedException.java">
@@ -438,26 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/jackson/JacksonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javakit/date/UserInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/network/HttpClientResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="method#ResponseBody#0;class#HttpClientResponse#0" />
-            <element signature="method#String#0;class#HttpClientResponse#0" />
-            <element signature="method#InputStream#0;class#HttpClientResponse#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javakit/network/WebClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -472,16 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/result/ResultCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,16 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/RSAKeys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -578,8 +596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="381" column="107" selection-start-line="381" selection-start-column="107" selection-end-line="381" selection-end-column="107" />
+        <state relative-caret-position="1476">
+          <caret line="385" column="7" lean-forward="true" selection-start-line="385" selection-start-column="7" selection-end-line="385" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#RSAUtils#0" />
@@ -596,6 +614,75 @@
             <element signature="method#getPrivateKey#0;class#RSAUtils#0" />
             <element signature="docComment;method#getPublicKey#0;class#RSAUtils#0" />
             <element signature="method#getPublicKey#0;class#RSAUtils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/network/HttpClientResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="198" column="21" selection-start-line="198" selection-start-column="21" selection-end-line="198" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ResponseBody#0;class#HttpClientResponse#0" />
+            <element signature="method#InputStream#0;class#HttpClientResponse#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/result/ResultCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/result/JavaKitClientResponseCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/jackson/JacksonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#2172#2173#0" expanded="true" />
+            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2251#2252#0" expanded="true" />
+            <element signature="e#2291#2292#0" expanded="true" />
+            <element signature="e#2326#2327#0" expanded="true" />
+            <element signature="e#2361#2362#0" expanded="true" />
+            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#2445#2446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

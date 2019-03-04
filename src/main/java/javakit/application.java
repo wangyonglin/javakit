@@ -1,25 +1,56 @@
 package javakit;
 
 
-import javakit.date.DateUtils;
-import javakit.security.RSAKeys;
-import javakit.security.RSAUtils;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import javakit.result.JavaKitClientResponseCallback;
+import javakit.util.JavaKitClientResponse;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
+import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 
 public class application {
     public static void main(String args[])throws Exception{
-       // RSAKeys rsaKeys=new RSAKeys();
-      //  rsaKeys.setPublicKey("MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC87pN6rYFbS8bldjpvMnm31aF8RsPhcm8PsSBE\r\nr01LCLcrQNOg5gHrlGyonhEwLMRFQVcN8hmdbVlseyRKgJkcxY9DeHRy2AsMFBXTpLamnRYDdR8N\r\nY52wsTAGayc2jdaeJMezO5Q+NFv0LEFHx7wfthL6KJJ4sHMdZ84+OwywuQIDAQAB"),
-       // rsaKeys.setPrivateKey("MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBALzuk3qtgVtLxuV2Om8yebfVoXxG\r\nw+Fybw+xIESvTUsItytA06DmAeuUbKieETAsxEVBVw3yGZ1tWWx7JEqAmRzFj0N4dHLYCwwUFdOk\r\ntqadFgN1Hw1jnbCxMAZrJzaN1p4kx7M7lD40W/QsQUfHvB+2Evookniwcx1nzj47DLC5AgMBAAEC\r\ngYADplAvBH8FNneHIzuJvl3fkT7nWa6bAkzm7rMC4KgLlQWEzmHIL+lFlb5rm3IVjifUdqip2k1o\r\nXx5lHBPdZJKQlSE2FNEChivktG3bNZzH7tJo5pBwH9LX9CRnQi472LSIL3aYVrkvgEU3CkfvG6qB\r\nZ7oIjCRZ7rEeeLe77sxrAQJBAP8fF+v8gRZ9lSn6E/T2OTXDs4MRRme4/8Uxj8E5rZZ58GffdSGt\r\nMIvOshOcQVY0XRKhC7rmQonwTq9SWaRjMjECQQC9lSHWQeKNs7UhZqPjhRGuBr3AcYfXTKxGG7QE\r\nnxJHxAfs4DGzrfv5Sqrxn3ydsMt9I2r0kYEpiKN6+FLjbn0JAkAzwCzsE8Zjt4nAgBf4QtIME+yg\r\nE6sCc0Z+y7TrbzXFJmsbxvpNoIIOehkpXTLrt6eBleV5PigVLwfnDH9elzihAkBhg8op2S3dUWiD\r\ny7XVG+diKlmEGWGUHv4l+a35CpFulKi28QLft0h6jCutqSmCOyQQNB2ZuxZC9OOSJxULoxNxAkAa\r\nGziuKtsVF9fmmyVx6YG4uTJ5ICGQWgJ3NRKD+aQq7gZ3BcRl5zK4ngpeSf6e6oDPlMPULZuS1dCF\r\n72XnunHC");
-        RSAKeys rsaKeys= RSAKeys.make();
-        System.out.println("getPrivateKey \n"+rsaKeys.getPrivateKey());
-        System.out.println("getPublicKey \n"+rsaKeys.getPublicKey());
-        String data=    RSAUtils.encryptedDataOnJava("dfghjkl",rsaKeys.getPublicKey());
-        System.out.println("encryptedDataOnJava\n"+data);
-        System.out.println("decryptDataOnJava \n "+ RSAUtils.decryptDataOnJava(data,rsaKeys.getPrivateKey()));
+        String uri="http://localhost:8888/user/auth";
+        String data="Mq+6QUMfEuOfWEKKdzbBWqQnAcHbN4RdkZeJh5detKO6liszkiotDpJpupb6UxlE+6ql518MVo1g\n" +
+                "VXGqxjp+BRRLLKY2m7fpCm1seeBBfVbN8ISXfNPPWrpMpsypnYIJZ0pdkMku/alvwfXtXAQtA7X8\n" +
+                "3f5Mpy+3IPBd1HoDm14=";
+        User user= new User();
+        user.setUser("wangyong");
+        user.setData(data);
+        JavaKitClientResponse.postRawJson(uri,user,new JavaKitClientResponseCallback<String>() {
+            @Override
+            public void success(String res) {
+                System.out.println(res);
+            }
+
+            @Override
+            public void failure(Exception e) {
+                e.printStackTrace();
+            }
+
+        });
+    }
+    static class User {
+        @JsonProperty
+        private String user;
+        @JsonProperty
+        private String data;
+
+        public String getUser() {
+            return user;
+        }
+
+        public void setUser(String user) {
+            this.user = user;
+        }
+
+        public String getData() {
+            return data;
+        }
+
+        public void setData(String data) {
+            this.data = data;
+        }
     }
 
 }
