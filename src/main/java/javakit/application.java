@@ -3,10 +3,7 @@ package javakit;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javakit.result.JavaKitClientResponseCallback;
-import javakit.util.JavaKitClientResponse;
-
-import java.io.IOException;
-import java.util.concurrent.ExecutionException;
+import javakit.network.JavaKitClientResponse;
 
 public class application {
     public static void main(String args[])throws Exception{

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5d3eb09-2e67-44a6-b0c2-35d9403de6c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/javakit/result/JavaKitClientResponseCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/javakit/application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/security/RSAUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/javakit/security/RSAUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javakit/application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javakit/application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javakit/network/JavaKitClientResponse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -74,36 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#2172#2173#0" expanded="true" />
-                <element signature="e#2207#2208#0" expanded="true" />
-                <element signature="e#2251#2252#0" expanded="true" />
-                <element signature="e#2291#2292#0" expanded="true" />
-                <element signature="e#2326#2327#0" expanded="true" />
-                <element signature="e#2361#2362#0" expanded="true" />
-                <element signature="e#2405#2406#0" expanded="true" />
-                <element signature="e#2445#2446#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/network/JavaKitClientResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="54">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -145,6 +117,7 @@
         <option value="$PROJECT_DIR$/src/main/java/javakit/result/JavaKitClientResponseCallback.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/application.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/network/JavaKitClientResponse.java" />
       </list>
     </option>
   </component>
@@ -309,7 +282,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551706524891" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551706715248" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -396,18 +369,18 @@
       <workItem from="1551623223839" duration="1686000" />
       <workItem from="1551675721310" duration="1868000" />
       <workItem from="1551692904502" duration="600000" />
-      <workItem from="1551698443616" duration="7296000" />
+      <workItem from="1551698443616" duration="7445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40633000" />
+    <option name="totallyTimeSpent" value="40782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49590835" weight="0.31164902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.31164902" />
       <window_info id="Structure" order="1" sideWeight="0.503268" side_tool="true" weight="0.30711043" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -416,7 +389,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33060557" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33060557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -659,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javakit/application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="81">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#941#942#0" expanded="true" />
@@ -677,13 +650,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/network/JavaKitClientResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
         </state>
       </provider>
     </entry>

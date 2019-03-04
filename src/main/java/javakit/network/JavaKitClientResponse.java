@@ -1,12 +1,8 @@
-package javakit.util;
+package javakit.network;
 
 import javakit.jackson.JacksonUtil;
-
-import javakit.network.HttpClientResponse;
 import javakit.result.JavaKitClientResponseCallback;
 import okhttp3.*;
-import okio.BufferedSink;
-
 import java.io.IOException;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
