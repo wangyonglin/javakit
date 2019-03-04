@@ -1,9 +1,7 @@
 package javakit.security;
 
-import lombok.Data;
 
 import java.util.Map;
-@Data
 public class RSAKeys {
     private String publicKey;
     private String privateKey;
