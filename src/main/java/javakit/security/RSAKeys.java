@@ -1,7 +1,7 @@
 package javakit.security;
 
 
-import org.apache.commons.codec.binary.Base64;
+import javakit.apache.commons.codec.binary.Base64;
 import java.security.KeyPair;
 import static javakit.security.RSAUtils.getKeyPair;
 

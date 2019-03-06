@@ -6,15 +6,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/application$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/application$User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/javakit/application$User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/javakit/application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/security/Base64Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/security/RSAKeys.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/javakit/security/RSAKeys.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/javakit/security/RSAUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/javakit/security/RSAUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javakit/application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javakit/application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javakit/security/Base64Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javakit/security/RSAKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javakit/security/RSAKeys.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -81,7 +72,97 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base64.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base64InputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodecInputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodecOutputStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BinaryCodec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/CharSequenceUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/package.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/StringUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Hex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,14 +193,26 @@
         <option value="$PROJECT_DIR$/src/main/java/javakit/security/Key.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/security/Base64Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/date/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/result/JavaKitClientResponseCallback.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/util/JavaKitClientResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/network/JavaKitClientResponse.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/security/RSAUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/security/RSAKeys.java" />
         <option value="$PROJECT_DIR$/src/main/java/javakit/application.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base32.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base32InputStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base32OutputStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base64.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base64InputStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodecInputStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodecOutputStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BinaryCodec.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/CharSequenceUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Hex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/StringUtils.java" />
       </list>
     </option>
   </component>
@@ -141,22 +234,39 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
+      <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="javakit" type="58d84e3e:PackageViewProjectNode" />
-              <item name="javakit.javakit" type="eaaa3913:PackageViewModuleGroupNode" />
+              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javakit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="javakit" type="58d84e3e:PackageViewProjectNode" />
-              <item name="javakit.javakit" type="eaaa3913:PackageViewModuleGroupNode" />
-              <item name="javakit.javakit.main" type="616d4139:PackageViewModuleNode" />
+              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javakit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javakit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javakit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
           <expand>
@@ -189,6 +299,48 @@
               <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apache" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apache" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="commons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apache" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="commons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="codec" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="javakit" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="javakit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="apache" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="commons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="codec" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="binary" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="javakit" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -262,38 +414,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javakit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javakit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="javakit" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="javakit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551877081000" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551884077943" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -382,17 +508,19 @@
       <workItem from="1551692904502" duration="600000" />
       <workItem from="1551698443616" duration="9295000" />
       <workItem from="1551775895377" duration="2397000" />
-      <workItem from="1551874569292" duration="2479000" />
+      <workItem from="1551874569292" duration="3306000" />
+      <workItem from="1551882902573" duration="954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47508000" />
+    <option name="totallyTimeSpent" value="49289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.3161876" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49590835" visible="true" weight="0.3207262" />
       <window_info id="Structure" order="1" sideWeight="0.503268" side_tool="true" weight="0.30711043" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -588,77 +716,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="385" column="7" selection-start-line="385" selection-start-column="7" selection-end-line="385" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#RSAUtils#0" />
-            <element signature="docComment;field#KEY_ALGORITHM#0;class#RSAUtils#0" />
-            <element signature="docComment;field#SIGNATURE_ALGORITHM#0;class#RSAUtils#0" />
-            <element signature="docComment;method#genKeyPair#0;class#RSAUtils#0" />
-            <element signature="docComment;method#decryptByPrivateKey#0;class#RSAUtils#0" />
-            <element signature="docComment;method#decryptByPublicKey#0;class#RSAUtils#0" />
-            <element signature="method#decryptByPublicKey#0;class#RSAUtils#0" />
-            <element signature="docComment;method#encryptByPublicKey#0;class#RSAUtils#0" />
-            <element signature="docComment;method#encryptByPrivateKey#0;class#RSAUtils#0" />
-            <element signature="method#encryptByPrivateKey#0;class#RSAUtils#0" />
-            <element signature="docComment;method#getPrivateKey#0;class#RSAUtils#0" />
-            <element signature="method#getPrivateKey#0;class#RSAUtils#0" />
-            <element signature="docComment;method#getPublicKey#0;class#RSAUtils#0" />
-            <element signature="method#getPublicKey#0;class#RSAUtils#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/Base64Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="58" column="63" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/RSAKeys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/Base64Utils.java" />
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/javakit/application.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -667,6 +727,126 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/RSAKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/security/RSAUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base32.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base32InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base32OutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1132">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#3928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Base64InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodecInputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BaseNCodecOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/BinaryCodec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/Hex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/CharSequenceUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/package.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javakit/apache/commons/codec/binary/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
