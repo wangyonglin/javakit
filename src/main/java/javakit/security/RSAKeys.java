@@ -1,31 +1,32 @@
 package javakit.security;
 
 
-import java.util.Map;
+import org.apache.commons.codec.binary.Base64;
+import java.security.KeyPair;
+import static javakit.security.RSAUtils.getKeyPair;
+
 public class RSAKeys {
-    private String publicKey;
-    private String privateKey;
-
-    public String getPublicKey() {
-        return publicKey;
+    public static String RsaPrivateKey;
+    public static String RsaPublicKey;
+    public static String getRsaPrivateKey() {
+        return RsaPrivateKey;
+    }
+    public static void setRsaPrivateKey(String rsaPrivateKey) {
+        RsaPrivateKey = rsaPrivateKey;
+    }
+    public static String getRsaPublicKey() {
+        return RsaPublicKey;
     }
 
-    public void setPublicKey(String publicKey) {
-        this.publicKey = publicKey;
+    public static void setRsaPublicKey(String rsaPublicKey) {
+        RsaPublicKey = rsaPublicKey;
     }
 
-    public String getPrivateKey() {
-        return privateKey;
-    }
-
-    public void setPrivateKey(String privateKey) {
-        this.privateKey = privateKey;
-    }
     public static RSAKeys make()throws Exception{
-        RSAKeys keys= new RSAKeys();
-        Map<String, Object> keyMap = RSAUtils.genKeyPair();
-        keys.setPublicKey(RSAUtils.getPublicKey(keyMap));
-        keys.setPrivateKey(RSAUtils.getPrivateKey(keyMap));
-        return keys;
+        // 生成密钥对
+        KeyPair keyPair = getKeyPair();
+        setRsaPrivateKey(new String(Base64.encodeBase64(keyPair.getPrivate().getEncoded())));
+        setRsaPublicKey(new String(Base64.encodeBase64(keyPair.getPublic().getEncoded())));
+        return new RSAKeys();
     }
 }

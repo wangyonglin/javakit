@@ -1,31 +1,26 @@
 package javakit;
-
-
 import com.fasterxml.jackson.annotation.JsonProperty;
-import javakit.result.JavaKitClientResponseCallback;
-import javakit.network.JavaKitClientResponse;
+import javakit.security.RSAKeys;
+import javakit.security.RSAUtils;
 
 public class application {
     public static void main(String args[])throws Exception{
-        String uri="http://localhost:8888/user/auth";
-        String data="Mq+6QUMfEuOfWEKKdzbBWqQnAcHbN4RdkZeJh5detKO6liszkiotDpJpupb6UxlE+6ql518MVo1g\n" +
-                "VXGqxjp+BRRLLKY2m7fpCm1seeBBfVbN8ISXfNPPWrpMpsypnYIJZ0pdkMku/alvwfXtXAQtA7X8\n" +
-                "3f5Mpy+3IPBd1HoDm14=";
-        User user= new User();
-        user.setUser("wangyong");
-        user.setData(data);
-        JavaKitClientResponse.postRawJson(uri,user,new JavaKitClientResponseCallback<String>() {
-            @Override
-            public void success(String res) {
-                System.out.println(res);
-            }
+       RSAKeys rsaKeys= RSAKeys.make();
+        System.out.println(rsaKeys.getRsaPublicKey());
+        System.out.println(rsaKeys.getRsaPrivateKey());
+        // RSA加密
+        String data = "待加密的文字内容";
+        String encryptData = RSAUtils.encrypt(data, RSAUtils.getPublicKey(rsaKeys.getRsaPublicKey()));
+        System.out.println("加密后内容:" + encryptData);
+        // RSA解密
+        String decryptData = RSAUtils.decrypt(encryptData, RSAUtils.getPrivateKey(rsaKeys.getRsaPrivateKey()));
+        System.out.println("解密后内容:" + decryptData);
 
-            @Override
-            public void failure(Exception e) {
-                e.printStackTrace();
-            }
-
-        });
+        // RSA签名
+        String sign = RSAUtils.sign(data, RSAUtils.getPrivateKey(rsaKeys.getRsaPrivateKey()));
+        // RSA验签
+        boolean result = RSAUtils.verify(data, RSAUtils.getPublicKey(rsaKeys.getRsaPublicKey()), sign);
+        System.out.print("验签结果:" + result);
     }
     static class User {
         @JsonProperty
