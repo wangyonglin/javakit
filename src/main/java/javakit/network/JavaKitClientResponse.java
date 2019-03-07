@@ -1,7 +1,8 @@
 package javakit.network;
 
-import javakit.jackson.JacksonUtil;
-import javakit.result.JavaKitClientResponseCallback;
+import com.fasterxml.jackson.databind.JsonNode;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;
 import java.io.IOException;
 import java.util.concurrent.Callable;
@@ -9,24 +10,22 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 public class JavaKitClientResponse{
-    private static String json=null;
-    public static void postRawJson(String url,Object obj, JavaKitClientResponseCallback<String> callback){
-        try {
-            json = JacksonUtil.obj2json(obj);
-            System.out.println(json);
-        } catch (Exception e) {
-            callback.failure(e);
-        }
-        FutureTask<String> task = new FutureTask<String>(new Callable<String>() {
+    public static void post(String url,String json,JavaKitClientResponseCallback<JsonNode> callback){
+                if(url==null&&json.equals("")){
+                    callback.failure(new Exception("url not empty"));
+                }
+            if(json==null&&json.equals("")){
+                callback.failure(new Exception("json not empty"));
+            }
+        FutureTask<JsonNode> task = new FutureTask<JsonNode>(new Callable<JsonNode>() {
+            private final  ObjectMapper objectMapper = new ObjectMapper();
             @Override
-            public String call()  {
+            public JsonNode call()  {
                 // TODO Auto-generated method stub
                 MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-                String result = null;
+                JsonNode result=null;
                 Response response = null;
-                if(json==null){
-                    callback.failure(new NullPointerException());
-                }
+
                 RequestBody post= RequestBody.create(JSON,json);
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
@@ -42,20 +41,20 @@ public class JavaKitClientResponse{
 
                 if (response.isSuccessful()) {
                     try {
-                        result = response.body().string();
+                        result=objectMapper.readTree(response.body().string());
                     } catch (IOException e) {
                         callback.failure(e);
                     }
                 }else {
                     callback.failure(new Exception("network request error : " + response.code()));
-                    return null;
+
                 }
                 return result;
             }});
         new Thread(task).start();
 
         try {
-            callback.success(task.get());
+            callback.success(task.get(),task.get().toString());
         } catch (InterruptedException e) {
             callback.failure(e);
             return;

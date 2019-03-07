@@ -1,5 +1,9 @@
 package javakit;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.JsonNode;
+import javakit.jackson.JacksonUtil;
+import javakit.network.JavaKitClientResponse;
+import javakit.network.JavaKitClientResponseCallback;
 import javakit.security.RSAKeys;
 import javakit.security.RSAUtils;
 
@@ -21,6 +25,23 @@ public class application {
         // RSA验签
         boolean result = RSAUtils.verify(data, RSAUtils.getPublicKey(rsaKeys.getRsaPublicKey()), sign);
         System.out.print("验签结果:" + result);
+
+        User user = new User();
+        user.setUser("wangyonglin");
+        user.setData("ddd");
+
+        JavaKitClientResponse.post("http://apis.eeob.com/user/auth",JacksonUtil.obj2json(user), new JavaKitClientResponseCallback<JsonNode>() {
+            @Override
+            public void success(JsonNode json, String res) {
+                System.out.println(json);
+                System.out.println(res);
+            }
+
+            @Override
+            public void failure(Exception e) {
+                e.printStackTrace();
+            }
+        });
     }
     static class User {
         @JsonProperty
