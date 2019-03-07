@@ -1,9 +1,11 @@
 package javakit.network;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.concurrent.ExecutionException;
 
 public interface JavaKitClientResponseCallback<T> {
+    default void success(InputStream res){};
     default void success(String res){};
     default void success(byte[] res){};
     default void success(T json,String res){};

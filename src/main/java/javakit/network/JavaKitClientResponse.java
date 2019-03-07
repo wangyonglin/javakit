@@ -4,11 +4,56 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import okhttp3.*;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 public class JavaKitClientResponse{
+    public static void get(String url, JavaKitClientResponseCallback<JsonNode> resultCallback) {
+
+        FutureTask<JsonNode> task = new FutureTask<JsonNode>(new Callable<JsonNode>() {
+            private final  ObjectMapper objectMapper = new ObjectMapper();
+            @Override
+            public JsonNode call()  {
+                // TODO Auto-generated method stub
+                JsonNode result = null;
+                Response response = null;
+                OkHttpClient client = new OkHttpClient();
+                Request request = new Request.Builder()
+                        .url(url)
+                        .build();
+
+                try {
+                    response = client.newCall(request).execute();
+                } catch (IOException e) {
+                    resultCallback.failure(e);
+                }
+
+                if (response.isSuccessful()) {
+                    try {
+                        result=objectMapper.readTree(response.body().string());
+                    } catch (IOException e) {
+                        resultCallback.failure(e);
+                    }
+                }else {
+                    resultCallback.failure(new Exception("network request error : " + response.code()));
+                }
+                return result;
+            }});
+        new Thread(task).start();
+
+        try {
+            resultCallback.success(task.get().toString());
+            resultCallback.success(task.get(),task.get().toString());
+        } catch (InterruptedException e) {
+            resultCallback.failure(e);
+            return;
+        } catch (ExecutionException e) {
+            resultCallback.failure(e);
+            return;
+        }
+    }
     public static void post(String url,String json,JavaKitClientResponseCallback<JsonNode> callback){
                 if(url==null&&json.equals("")){
                     callback.failure(new Exception("url not empty"));
@@ -53,7 +98,6 @@ public class JavaKitClientResponse{
         new Thread(task).start();
 
         try {
-            callback.success(task.get().binaryValue());
             callback.success(task.get().toString());
             callback.success(task.get(),task.get().toString());
         } catch (InterruptedException e) {
@@ -62,12 +106,8 @@ public class JavaKitClientResponse{
         } catch (ExecutionException e) {
             callback.failure(e);
             return;
-        } catch (IOException e) {
-            callback.failure(e);
-            return;
         }
     }
-
     public static void bytes(String url, JavaKitClientResponseCallback<byte[]> resultCallback) {
 
 
@@ -113,15 +153,15 @@ public class JavaKitClientResponse{
             return;
         }
     }
+    public static void stream(String url, JavaKitClientResponseCallback<InputStream> resultCallback) {
 
-    public static void get(String url, JavaKitClientResponseCallback<JsonNode> resultCallback) {
 
-        FutureTask<JsonNode> task = new FutureTask<JsonNode>(new Callable<JsonNode>() {
-            private final  ObjectMapper objectMapper = new ObjectMapper();
+        FutureTask<InputStream> task = new FutureTask<InputStream>(new Callable<InputStream>() {
+
             @Override
-            public JsonNode call()  {
+            public InputStream call()  {
                 // TODO Auto-generated method stub
-                JsonNode result = null;
+                InputStream inputStream = null;
                 Response response = null;
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
@@ -135,29 +175,20 @@ public class JavaKitClientResponse{
                 }
 
                 if (response.isSuccessful()) {
-                    try {
-                        result=objectMapper.readTree(response.body().string());
-                    } catch (IOException e) {
-                        resultCallback.failure(e);
-                    }
+                    inputStream = response.body().byteStream();
                 }else {
                     resultCallback.failure(new Exception("network request error : " + response.code()));
                 }
-                return result;
+                return inputStream;
             }});
         new Thread(task).start();
 
         try {
-            resultCallback.success(task.get().binaryValue());
-            resultCallback.success(task.get().toString());
-            resultCallback.success(task.get(),task.get().toString());
+            resultCallback.success(task.get());
         } catch (InterruptedException e) {
             resultCallback.failure(e);
             return;
         } catch (ExecutionException e) {
-            resultCallback.failure(e);
-            return;
-        } catch (IOException e) {
             resultCallback.failure(e);
             return;
         }
