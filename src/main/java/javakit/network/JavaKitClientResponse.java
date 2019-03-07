@@ -10,14 +10,16 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 public class JavaKitClientResponse{
-    public static void get(String url, JavaKitClientResponseCallback<JsonNode> resultCallback) {
+    public static void get(String url, JavaKitClientResponseCallback<String> resultCallback) {
+        if(url==null&&url.equals("")){
+            resultCallback.failure(new Exception("url not empty"));
+        }
+        FutureTask<String> task = new FutureTask<String>(new Callable<String>() {
 
-        FutureTask<JsonNode> task = new FutureTask<JsonNode>(new Callable<JsonNode>() {
-            private final  ObjectMapper objectMapper = new ObjectMapper();
             @Override
-            public JsonNode call()  {
+            public String call()  {
                 // TODO Auto-generated method stub
-                JsonNode result = null;
+                String result = null;
                 Response response = null;
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
@@ -32,7 +34,7 @@ public class JavaKitClientResponse{
 
                 if (response.isSuccessful()) {
                     try {
-                        result=objectMapper.readTree(response.body().string());
+                        result=response.body().string();
                     } catch (IOException e) {
                         resultCallback.failure(e);
                     }
@@ -44,8 +46,9 @@ public class JavaKitClientResponse{
         new Thread(task).start();
 
         try {
-            resultCallback.success(task.get().toString());
-            resultCallback.success(task.get(),task.get().toString());
+
+            resultCallback.success(task.get());
+
         } catch (InterruptedException e) {
             resultCallback.failure(e);
             return;
@@ -54,20 +57,20 @@ public class JavaKitClientResponse{
             return;
         }
     }
-    public static void post(String url,String json,JavaKitClientResponseCallback<JsonNode> callback){
-                if(url==null&&json.equals("")){
+    public static void post(String url,String json,JavaKitClientResponseCallback<String> callback){
+                if(url==null&&url.equals("")){
                     callback.failure(new Exception("url not empty"));
                 }
             if(json==null&&json.equals("")){
                 callback.failure(new Exception("json not empty"));
             }
-        FutureTask<JsonNode> task = new FutureTask<JsonNode>(new Callable<JsonNode>() {
-            private final  ObjectMapper objectMapper = new ObjectMapper();
+        FutureTask<String> task = new FutureTask<String>(new Callable<String>() {
+
             @Override
-            public JsonNode call()  {
+            public String call()  {
                 // TODO Auto-generated method stub
                 MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-                JsonNode result=null;
+                String result=null;
                 Response response = null;
 
                 RequestBody post= RequestBody.create(JSON,json);
@@ -85,7 +88,7 @@ public class JavaKitClientResponse{
 
                 if (response.isSuccessful()) {
                     try {
-                        result=objectMapper.readTree(response.body().string());
+                        result=response.body().string();
                     } catch (IOException e) {
                         callback.failure(e);
                     }
@@ -98,8 +101,7 @@ public class JavaKitClientResponse{
         new Thread(task).start();
 
         try {
-            callback.success(task.get().toString());
-            callback.success(task.get(),task.get().toString());
+            callback.success(task.get());
         } catch (InterruptedException e) {
             callback.failure(e);
             return;

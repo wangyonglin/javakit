@@ -30,10 +30,10 @@ public class application {
         user.setUser("wangyonglin");
         user.setData("ddd");
 
-        JavaKitClientResponse.get("http://apis.eeob.com/user/login?user=wangyonglin&pass=W@ng0811", new JavaKitClientResponseCallback<JsonNode>() {
+        JavaKitClientResponse.get("http://apis.eeob.com/user/login?user=wangyonglin&pass=W@ng0811", new JavaKitClientResponseCallback<String>() {
             @Override
-            public void success(JsonNode json, String res) {
-                System.out.println(json);
+            public void success(String res) {
+
                 System.out.println(res);
             }
 
