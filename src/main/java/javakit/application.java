@@ -30,7 +30,7 @@ public class application {
         user.setUser("wangyonglin");
         user.setData("ddd");
 
-        JavaKitClientResponse.post("http://apis.eeob.com/user/auth",JacksonUtil.obj2json(user), new JavaKitClientResponseCallback<JsonNode>() {
+        JavaKitClientResponse.get("http://apis.eeob.com/user/login?user=wangyonglin&pass=W@ng0811", new JavaKitClientResponseCallback<JsonNode>() {
             @Override
             public void success(JsonNode json, String res) {
                 System.out.println(json);
@@ -39,7 +39,7 @@ public class application {
 
             @Override
             public void failure(Exception e) {
-                e.printStackTrace();
+                System.err.println(e.getMessage());
             }
         });
     }
