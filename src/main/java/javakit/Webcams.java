@@ -1,4 +1,4 @@
-package com.khbd.data;
+package javakit;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;

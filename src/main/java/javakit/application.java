@@ -1,69 +1,34 @@
 package javakit;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.JsonNode;
-import javakit.jackson.JacksonUtil;
+
+
 import javakit.network.JavaKitClientResponse;
 import javakit.network.JavaKitClientResponseCallback;
-import javakit.security.RSAKeys;
-import javakit.security.RSAUtils;
+import javakit.util.JavaKitJsonUtils;
+
+import java.util.Iterator;
+import java.util.List;
 
 public class application {
     public static void main(String args[])throws Exception{
-       RSAKeys rsaKeys= RSAKeys.make();
-        System.out.println(rsaKeys.getRsaPublicKey());
-        System.out.println(rsaKeys.getRsaPrivateKey());
-        // RSA加密
-        String data = "待加密的文字内容";
-        String encryptData = RSAUtils.encrypt(data, RSAUtils.getPublicKey(rsaKeys.getRsaPublicKey()));
-        System.out.println("加密后内容:" + encryptData);
-        // RSA解密
-        String decryptData = RSAUtils.decrypt(encryptData, RSAUtils.getPrivateKey(rsaKeys.getRsaPrivateKey()));
-        System.out.println("解密后内容:" + decryptData);
 
-        // RSA签名
-        String sign = RSAUtils.sign(data, RSAUtils.getPrivateKey(rsaKeys.getRsaPrivateKey()));
-        // RSA验签
-        boolean result = RSAUtils.verify(data, RSAUtils.getPublicKey(rsaKeys.getRsaPublicKey()), sign);
-        System.out.print("验签结果:" + result);
-
-        User user = new User();
-        user.setUser("wangyonglin");
-        user.setData("ddd");
-
-        JavaKitClientResponse.get("http://apis.eeob.com/user/login?user=wangyonglin&pass=W@ng0811", new JavaKitClientResponseCallback<String>() {
+        String uri= "http://apis.eeob.com/webcams/all";
+        JavaKitClientResponse.get(uri, new JavaKitClientResponseCallback<String>() {
             @Override
             public void success(String res) {
+                System.out.print(res);
+                try {
+                    List<Webcams> webcams = JavaKitJsonUtils.json2list(res,Webcams.class);
+                    for(Iterator iterators = webcams.iterator();iterators.hasNext();){
+                        Webcams example = (Webcams) iterators.next();//获取当前遍历的元素，指定为Example对象
+                               String name = example.getTitle();
+                                System.out.print("Name:"+name);
+                            }
 
-                System.out.println(res);
-            }
-
-            @Override
-            public void failure(Exception e) {
-                System.err.println(e.getMessage());
+                } catch (Exception e) {
+                   e.printStackTrace();
+                }
             }
         });
-    }
-    static class User {
-        @JsonProperty
-        private String user;
-        @JsonProperty
-        private String data;
-
-        public String getUser() {
-            return user;
-        }
-
-        public void setUser(String user) {
-            this.user = user;
-        }
-
-        public String getData() {
-            return data;
-        }
-
-        public void setData(String data) {
-            this.data = data;
-        }
     }
 
 }
